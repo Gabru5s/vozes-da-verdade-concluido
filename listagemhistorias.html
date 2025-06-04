@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Histórias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="listagemhistorias.html">Histórias</a></li>
+      <li><a href="historias.html">Compartilhar</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="perfilusuario.html" id="linkPerfil" style="display: none;">Meu Perfil</a></li>
+      <li><a href="#" id="logoutBtn" style="display: none;">Sair</a></li>
+    </ul>
+  </nav>
+
+  <div class="historia-container">
+    <h1>Histórias</h1>
+
+      <img src="img/listagem/imagem3.jpg" 
+     alt="Manifestação contra abuso policial"
+     style="width: 50%; max-width: 1200px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+   
+     <!-- Formulário de filtros -->
+    <section class="filtro-form">
+      <h2>Filtros</h2>
+      <form onsubmit="filtrarHistorias(event)">
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+          <option value="">Selecione</option>
+          <option value="verbal">Abuso Verbal</option>
+          <option value="fisico">Abuso Físico</option>
+        </select>
+
+
+        <label for="palavraChave">Palavra-chave:</label>
+        <input type="text" id="palavraChave" name="palavraChave">
+
+
+
+
+        <button type="submit">Filtrar</button>
+      </form>
+    </section>
+
+    <!-- Aqui vai as histórias aprovadas -->
+    <div id="aprovadas-container"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Projeto Histórias</p>
+    <ul>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="termos.html">Termos de Uso</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

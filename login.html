@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="listagemhistorias.html">Histórias</a></li>
+            <li><a href="historias.html">Compartilhar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            
+        </ul>
+    </nav>
+    <div class="login-container">
+        <h2>Login vozes da verdade</h2>
+        <form>
+            <div class="input-group">
+                <label for="txtusuario">E-mail</label>
+                <input type="text" id="txtusuario" name="txtusuario" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="txtsenha">Senha</label>
+                <input type="password" id="txtsenha" name="txtsenha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="button" onclick="login(event)">Entrar</button>
+
+        </form>
+
+        <div class="linksenha">
+            <p><a href="recuperarsenha.html"><b>esqueci a senha</b></a></p>
+        </div>
+        <br />
+        <p>não tem conta? <a href="cadastro.html"><b>cadastrar</b></a></li>
+    </div>
+    <footer>
+        <p>&copy; 2025 Projeto Histórias</p>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

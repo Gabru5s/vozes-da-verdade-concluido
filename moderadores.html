@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moderação</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+
+<body>
+<div class="main-content">
+    <h1>Painel do Moderador ✅</h1>
+
+    <div class="moderador-container">
+        <h2>Filtros</h2>
+        <form class="filtro-form" onsubmit="aplicarFiltros(event)">
+            <label for="tipo-denuncia">Tipo de denúncia:</label>
+            <select id="tipo-denuncia" name="tipo-denuncia">
+                <option value="">Todos</option>
+                <option value="fisico">Abuso fisico</option>
+                <option value="verbal">Abuso verbal</option>
+                
+            </select>
+<button onclick="sairModerador()" class="btn-sair">Sair</button>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+
+            <button type="submit">Aplicar Filtros</button>
+      
+
+    <h2>Histórias Pendentes / Denunciadas</h2>
+    <div id="pendentes-container"></div>
+
+    <h2>Histórias Aprovadas</h2>
+    <div id="aprovadas-moderacao-container"></div>
+</div>
+  </form>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Projeto Histórias</p>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

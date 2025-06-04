@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul type="square">
+           <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="listagemhistorias.html">Histórias</a></li>
+            <li><a href="historias.html">Compartilhar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="perfilusuario.html" id="linkPerfil" style="display: none;">Meu Perfil</a></li>
+            <li><a href="#" id="logoutBtn" style="display: none;">Sair</a></li>
+
+        </ul>
+  </nav>
+
+  <main>
+  <div class="perfil-container">
+    <h2>Perfil do Usuário</h2>
+    <div class="dados-usuario">
+      <p><strong>Nome:</strong> <span id="perfil-nome"></span></p>
+      <p><strong>CPF:</strong> <span id="perfil-cpf"></span></p>
+      <p><strong>Email:</strong> <span id="perfil-email"></span></p>
+      <p><strong>Telefone:</strong> <span id="perfil-telefone"></span></p>
+      <p><strong>Data de Nascimento:</strong> <span id="perfil-nascimento"></span></p>
+    </div>
+  </div>
+</main>
+
+  <img src="img/perfil/imagem2.jpg" 
+     alt="Manifestação contra abuso policial"
+     style="width: 30%; max-width: 1200px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+
+  <script src="script.js"></script>
+</body>
+</html>

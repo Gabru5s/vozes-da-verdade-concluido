@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav>
+        <ul type="squre">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="listagemhistorias.html">Histórias</a></li>
+            <li><a href="historias.html">Compartilhar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#" id="logoutBtn" style="display: none;">Sair</a></li>
+            
+
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h2>Cadastro de usuário</h2>
+        <form onsubmit="cadastrar(event)">
+            <div class="input-group">
+                <label for="txtnome">Nome completo *</label>
+                <input type="text" id="txtnome" name="txtnome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="txtcpf">CPF *</label>
+                <input type="text" id="txtcpf" name="txtcpf" placeholder="xxx-xxx-xxx-xx" required>
+            </div>
+
+            <div class="input-group">
+                <label for="txtemail">Email *</label>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Digite o seu email" required>
+            </div>
+            <div class="input-group">
+                <label for="txtsenha">Senha *</label>
+                <input type="password" id="txtSenha" name="txtSenha" placeholder="Digite a sua senha" required>
+                <div id="erroSenhaCurta" style="color: red; display: none; font-size: 0.9em;">
+  A senha deve ter pelo menos 8 caracteres.
+</div>
+            </div>
+
+            <div class="input-group">
+                <label for="txtconfimarsenha">confirme a Senha *</label>
+                <input type="password" id="txtconfirmarsenha" name="txtconfirmarsenha" placeholder="Digite a sua senha" required>
+                 <p id="txterro" style="color: red; display: none; font-size: 0.9em;">
+    As senhas não coincidem.
+  </p>
+            </div>
+
+
+            <div class="input-group">
+                <label for="txtnumero">Telefone</label>
+                <input type="tel" id="txtnumero" name="txtnumero" placeholder="Digite o telefone (opicional)">
+            </div>
+
+            <div class="input-group">
+                <label for="txtnascimento">Data de nascimento *</label>
+                <input type="date" id="txtnascimento" name="txtnascimento" required>
+            </div>
+            <button type= "submit">Cadastrar</button>
+        </form>
+
+        <p>ja possui conta? faça <a href="login.html"><b>login</b></a>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2025 Projeto Histórias</p>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+        </ul>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>

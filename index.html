@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu de Navegação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-content">
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="listagemhistorias.html">Histórias</a></li>
+          <li><a href="historias.html">Compartilhar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li>
+            <a href="perfilusuario.html" id="linkPerfil" style="display: none"
+              >Meu Perfil</a
+            >
+          </li>
+          <li><a href="#" id="logoutBtn" style="display: none">Sair</a></li>
+        </ul>
+      </nav>
+
+      <div class="inicio-conteiner">
+        <header>
+          <h1>Projeto Vozes da Verdade</h1>
+          <h2>Compartilhe e descubra histórias reais</h2>
+        </header>
+
+        <img
+          src="img/inicio/imagem1.jpg"
+          alt="stop police brutality"
+          style="
+            width: 35%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+          "
+        />
+
+        <section>
+          <h3>Missão</h3>
+          <p>
+            Nossa missão é dar voz a pessoas reais por meio do compartilhamento
+            de suas histórias, promovendo empatia, reflexão e comunidade.
+          </p>
+
+          <h3>Objetivo</h3>
+          <p>
+            Conectar pessoas através de relatos autênticos e relevantes, criando
+            um espaço seguro e acessível para todos.
+          </p>
+        </section>
+
+        <div class="sub">
+          <section>
+            <h3>Ações</h3>
+            <div class="botoes-acoes">
+              <a href="historias.html">📤 Compartilhar História</a>
+              <a href="login.html">🔐 Entrar</a>
+              <a href="cadastro.html">Cadastrar</a>
+              <a href="listagemhistorias.html">📖 Ver Histórias</a>
+            </div>
+          </section>
+        </div>
+
+        <section>
+          <h3>Histórias em Destaque</h3>
+        </section>
+
+        <div id="aprovadas-container"></div>
+      </div>
+
+      <footer>
+        <p>&copy; 2025 Projeto Histórias</p>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="cookie-banner">
+      <p>
+        Este site utiliza cookies para melhorar sua experiência. Ao continuar,
+        você concorda com o uso.
+      </p>
+      <button id="accept-cookies">Aceitar</button>
+    </div>
+  </body>
+</html>

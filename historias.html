@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compartilhar História</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul type="square">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="listagemhistorias.html">Histórias</a></li>
+        <li><a href="historias.html">Compartilhar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li>
+          <a href="perfilusuario.html" id="linkPerfil" style="display: none"
+            >Meu Perfil</a
+          >
+        </li>
+        <li><a href="#" id="logoutBtn" style="display: none">Sair</a></li>
+      </ul>
+    </nav>
+
+    <img
+      src="img/historias/imagem5.jpg"
+      alt="Manifestação contra abuso policial"
+      style="
+        width: 30%;
+        max-width: 1200px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+      "
+    />
+
+    <div class="login-container">
+      <h2>Compartilhe suas histórias!</h2>
+
+      <form onsubmit="enviarHistoria(); return false;">
+        <div class="input-group">
+          <label for="nomesemcadastro">Seu nome</label>
+          <input
+            type="text"
+            id="nomesemcadastro"
+            name="nomesemcadastro"
+            placeholder="Digite o seu nome (opcional)"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="categoria">Categoria *</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="verbal">Abuso Verbal</option>
+            <option value="fisico">Abuso Físico</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="campo-historia">Conte-nos sua experiência *</label>
+          <textarea
+            id="campo-historia"
+            name="campo-historia"
+            rows="4"
+            cols="40"
+            placeholder="Descreva com detalhes"
+          ></textarea>
+          <div
+            id="erroHistoriaCurta"
+            style="color: red; display: none; font-size: 0.9em"
+          >
+            A história deve ter pelo menos 30 caracteres.
+          </div>
+        </div>
+
+        <button type="submit" id="btnDenunciar" class="btn-inativo" disabled>
+          DENUNCIAR!
+        </button>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2025 Projeto Histórias</p>
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
